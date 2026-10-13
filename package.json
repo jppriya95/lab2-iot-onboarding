@@ -1,17 +1,13 @@
 {
-  "name": "iot-lab-automation",
+  "name": "thinkpalm-agentai-jayapriya-lab2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lab 2: IoT Device Onboarding BDD and Playwright Test Automation",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test src/tests/iot_onboarding.spec.ts",
+    "test:report": "playwright test src/tests/iot_onboarding.spec.ts --reporter=html && playwright show-report"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.64.0",
-    "typescript": "^7.0.2"
+    "@playwright/test": "^1.40.0",
+    "typescript": "^5.0.0"
   }
 }
